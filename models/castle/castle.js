@@ -7,7 +7,7 @@ const loadCastle = async () => {
   let position, scale, rotation, light, intensity, distance, freq;
 
   const build = () => {
-    position = [randFloat(-3, 3), 0.1, randFloat(-4, -2)];
+    position = [randFloat(0, 3), 0.1, randFloat(-4, -2)];
     scale = 0.1 * randFloat(0.7, 1.3);
     rotation = [
       -90 * THREE.Math.DEG2RAD,

@@ -7,7 +7,7 @@ const loadCoral = async () => {
   let position, scale, rotation, light, intensity, distance, freq;
 
   const build = () => {
-    position = [randFloat(-3, 3), 0.1, randFloat(-5, 0)];
+    position = [randFloat(-3, 3), 0.1, randFloat(-2, 0)];
     scale = 0.01 * randFloat(0.7, 1.3);
     rotation = [
       -90 * THREE.Math.DEG2RAD,
