@@ -1,8 +1,7 @@
 const _textureLoader = new THREE.TextureLoader();
 const _objLoader = new THREE.OBJLoader();
 
-const loadModel = async path => {
-  const { texturePath, objectPath } = _constructPath(path);
+const loadModel = async (texturePath, objectPath) => {
   const material = await _loadTexture(texturePath);
   const object = await _loadObject(objectPath);
   _addMaterial(object, material);
@@ -32,8 +31,3 @@ const _addMaterial = (object, material) => {
     }
   });
 };
-
-const _constructPath = path => ({
-  texturePath: path + "/texture.png",
-  objectPath: path + "/object.obj"
-});

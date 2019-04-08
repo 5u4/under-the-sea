@@ -1,6 +1,3 @@
-const light = new THREE.PointLight(0xffffff, 1, 50);
-light.position.set(1, 1, 1);
+const light = new THREE.PointLight(0x080f19, 3, 10);
+light.position.set(0, 1, 0);
 scene.add(light);
-
-ambientLight = new THREE.AmbientLight(0x111111);
-scene.add(ambientLight);
