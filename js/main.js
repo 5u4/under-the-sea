@@ -1,2 +1,4 @@
 loadGround();
+loadClown();
+loadBlueTang();
 render();
