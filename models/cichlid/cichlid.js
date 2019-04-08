@@ -3,7 +3,7 @@ const loadCichlid = async () => {
   const boarder = 11;
 
   const position = [flipped * boarder, randFloat(0, 4.5), randFloat(-15, 0)];
-  const scale = [0.4, 0.4, 0.4];
+  const scale = 0.4 * randFloat(0.9, 1.1);
   const rotation = [
     flipped * 90 * THREE.Math.DEG2RAD,
     (flipped === 1 ? 180 : 0) * THREE.Math.DEG2RAD,
@@ -16,7 +16,7 @@ const loadCichlid = async () => {
   );
 
   cichlid.position.set(...position);
-  cichlid.scale.set(...scale);
+  cichlid.scale.set(scale, scale, scale);
   cichlid.rotation.set(...rotation);
   scene.add(cichlid);
 

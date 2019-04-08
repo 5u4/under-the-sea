@@ -3,7 +3,7 @@ const loadBlueTang = async () => {
   const boarder = 11;
 
   const position = [flipped * boarder, randFloat(0.5, 5), randFloat(-15, 0)];
-  const scale = [0.1, 0.1, 0.1];
+  const scale = 0.1 * randFloat(0.9, 1.1);
   const rotation = [
     -90 * THREE.Math.DEG2RAD,
     0 * THREE.Math.DEG2RAD,
@@ -16,7 +16,7 @@ const loadBlueTang = async () => {
   );
 
   blueTang.position.set(...position);
-  blueTang.scale.set(...scale);
+  blueTang.scale.set(scale, scale, scale);
   blueTang.rotation.set(...rotation);
   scene.add(blueTang);
 
