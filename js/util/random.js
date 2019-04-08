@@ -5,3 +5,7 @@ const randInt = (min, max) => {
 const randFloat = (min, max) => {
   return Math.random() * (max - min + 1) + min;
 };
+
+const randSign = () => {
+  return randInt(0, 1) === 0 ? 1 : -1;
+};

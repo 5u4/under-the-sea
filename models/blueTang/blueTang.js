@@ -1,7 +1,8 @@
 const loadBlueTang = async () => {
-  const flipped = randInt(0, 1) === 0 ? 1 : -1;
+  const flipped = randSign();
+  const boarder = 11;
 
-  const position = [flipped * 10, randFloat(0.5, 5), randFloat(-5, 0)];
+  const position = [flipped * boarder, randFloat(0.5, 5), randFloat(-15, 0)];
   const scale = [0.1, 0.1, 0.1];
   const rotation = [
     -90 * THREE.Math.DEG2RAD,
@@ -19,9 +20,9 @@ const loadBlueTang = async () => {
   blueTang.rotation.set(...rotation);
   scene.add(blueTang);
 
-  const boarder = 11;
   const speed = flipped * 0.03 * randFloat(0.8, 1.2);
   const wave = 0.3 * randFloat(0.8, 1.2);
+  const freq = randFloat(900, 1100);
 
   const animation = () => {
     if (Math.abs(blueTang.position.x) > boarder) {
@@ -32,7 +33,7 @@ const loadBlueTang = async () => {
 
     blueTang.position.x -= speed;
     blueTang.position.y =
-      position[1] + Math.sin(performance.now() / 1000) * wave;
+      position[1] + Math.sin(performance.now() / freq) * wave;
   };
 
   animations.push(animation);
