@@ -1,4 +1,12 @@
-const spawns = [loadClown, loadBlueTang, loadFish1, loadCichlid];
+const spawns = [
+  loadClown,
+  loadBlueTang,
+  loadFish1,
+  loadCichlid,
+  loadFish2,
+  loadFish2,
+  loadFish2
+];
 
 let countdown = randInt(0, 3);
 
