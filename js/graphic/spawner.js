@@ -7,7 +7,8 @@ const spawns = [
   loadFish2,
   loadFish3,
   loadFish3,
-  loadFish3
+  loadFish3,
+  loadCoral
 ];
 
 const totalFishes = 30;
