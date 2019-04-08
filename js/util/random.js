@@ -14,7 +14,7 @@ const randPosition = flipped => [
 
 const randScale = scale => scale * randFloat(0.95, 1.05);
 
-const randSpeed = flipped => flipped * 0.04 * randFloat(0.7, 1.3);
+const randSpeed = flipped => flipped * 0.02 * randFloat(0.7, 1.3);
 
 const randWave = () => 0.4 * randFloat(0.7, 1.3);
 
