@@ -9,3 +9,5 @@ const randFloat = (min, max) => {
 const randSign = () => {
   return randInt(0, 1) === 0 ? 1 : -1;
 };
+
+let pincrement = performance.now();

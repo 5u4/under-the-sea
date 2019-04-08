@@ -32,8 +32,7 @@ const loadCichlid = async () => {
     }
 
     cichlid.position.x -= speed;
-    cichlid.position.y =
-      position[1] + Math.cos(performance.now() / freq) * wave;
+    cichlid.position.y = position[1] + Math.cos(pincrement / freq) * wave;
   };
 
   animations.push(animation);

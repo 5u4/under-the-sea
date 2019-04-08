@@ -32,7 +32,7 @@ const loadFish1 = async () => {
     }
 
     fish1.position.x -= speed;
-    fish1.position.y = position[1] + Math.sin(performance.now() / freq) * wave;
+    fish1.position.y = position[1] + Math.sin(pincrement / freq) * wave;
   };
 
   animations.push(animation);

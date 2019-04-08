@@ -32,7 +32,7 @@ const loadClown = async () => {
     }
 
     clown.position.x -= speed;
-    clown.position.y = position[1] + Math.sin(performance.now() / freq) * wave;
+    clown.position.y = position[1] + Math.sin(pincrement / freq) * wave;
   };
 
   animations.push(animation);

@@ -32,8 +32,7 @@ const loadBlueTang = async () => {
     }
 
     blueTang.position.x -= speed;
-    blueTang.position.y =
-      position[1] + Math.sin(performance.now() / freq) * wave;
+    blueTang.position.y = position[1] + Math.sin(pincrement / freq) * wave;
   };
 
   animations.push(animation);
