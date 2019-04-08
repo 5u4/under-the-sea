@@ -1,8 +1,8 @@
 const loadCichlid = async () => {
   const flipped = randSign();
-  const boarder = 20;
+  const boarder = 15;
 
-  const position = [flipped * boarder, randFloat(0, 4.5), randFloat(-15, 0)];
+  const position = [flipped * boarder, randFloat(0, 4.5), randFloat(-5, 0)];
   const scale = 0.4 * randFloat(0.95, 1.05);
   const rotation = [
     flipped * 90 * THREE.Math.DEG2RAD,

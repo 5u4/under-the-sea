@@ -1,4 +1,4 @@
-const glimmer = new THREE.PointLight(0x080f19, 3, 10);
+const glimmer = new THREE.PointLight(0x080f19, 1, 10);
 glimmer.position.set(0, 1, 0);
 scene.add(glimmer);
 
