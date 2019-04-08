@@ -10,14 +10,10 @@ const spawns = [
   loadFish3
 ];
 
-let countdown = randInt(0, 3);
+const totalFishes = 30;
 
 const spawn = () => {
-  if (countdown > 0) {
-    countdown--;
-    return;
+  for (let i = 0; i < totalFishes; i++) {
+    spawns[randInt(0, spawns.length - 1)]();
   }
-
-  spawns[randInt(0, spawns.length - 1)]();
-  countdown = randInt(30, 160);
 };

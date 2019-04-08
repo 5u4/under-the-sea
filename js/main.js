@@ -1,3 +1,4 @@
 loadGround();
 loadSkull();
+spawn();
 render();
