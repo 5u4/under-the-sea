@@ -3,7 +3,7 @@ const loadFish1 = async () => {
   const boarder = 11;
 
   const position = [flipped * boarder, randFloat(0.5, 3), randFloat(-5, -1)];
-  const scale = 0.1 * randFloat(0.9, 1.1);
+  const scale = 0.1 * randFloat(0.95, 1.05);
   const rotation = [
     -90 * THREE.Math.DEG2RAD,
     -flipped * 90 * THREE.Math.DEG2RAD,

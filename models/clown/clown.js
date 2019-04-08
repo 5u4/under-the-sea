@@ -3,7 +3,7 @@ const loadClown = async () => {
   const boarder = 20;
 
   const position = [flipped * boarder, randFloat(0.5, 3.5), randFloat(-6, -1)];
-  const scale = 0.03 * randFloat(0.9, 1.1);
+  const scale = 0.03 * randFloat(0.95, 1.05);
   const rotation = [
     -90 * THREE.Math.DEG2RAD,
     0 * THREE.Math.DEG2RAD,

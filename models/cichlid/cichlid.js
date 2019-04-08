@@ -3,7 +3,7 @@ const loadCichlid = async () => {
   const boarder = 20;
 
   const position = [flipped * boarder, randFloat(0, 4.5), randFloat(-15, 0)];
-  const scale = 0.4 * randFloat(0.9, 1.1);
+  const scale = 0.4 * randFloat(0.95, 1.05);
   const rotation = [
     flipped * 90 * THREE.Math.DEG2RAD,
     (flipped === 1 ? 180 : 0) * THREE.Math.DEG2RAD,

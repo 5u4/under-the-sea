@@ -1,9 +1,9 @@
 const loadBlueTang = async () => {
   const flipped = randSign();
-  const boarder = 11;
+  const boarder = 15;
 
-  const position = [flipped * boarder, randFloat(0.5, 5), randFloat(-15, 0)];
-  const scale = 0.1 * randFloat(0.9, 1.1);
+  const position = [flipped * boarder, randFloat(0.5, 5), randFloat(-7, 0)];
+  const scale = 0.1 * randFloat(0.95, 1.05);
   const rotation = [
     -90 * THREE.Math.DEG2RAD,
     0 * THREE.Math.DEG2RAD,
