@@ -12,6 +12,7 @@ document.body.appendChild(renderer.domElement);
 
 const render = () => {
   requestAnimationFrame(render);
+  spawn();
   renderer.render(scene, camera);
   processAnimations();
 };
