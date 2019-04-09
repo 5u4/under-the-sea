@@ -10,7 +10,7 @@ const fishes = [
   loadFish3
 ];
 
-const groundObj = [loadCoral, loadLog];
+const groundObj = [loadCoral];
 
 const totalFishes = 30;
 const totalGroundObj = 3;
