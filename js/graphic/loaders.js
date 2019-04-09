@@ -1,4 +1,5 @@
 const _textureLoader = new THREE.TextureLoader();
+_textureLoader.crossOrigin = "Anonymous";
 const _objLoader = new THREE.OBJLoader();
 
 const loadModel = async (texturePath, objectPath) => {
